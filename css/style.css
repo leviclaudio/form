@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+
+:root{
+
+    --cor01: #ffffff;
+    --cor02: #f06414;
+    --inputcolorbg: hsla(22, 88%, 51%, 0.418);
+    --btn-hover-color-bg: #333E48;
+
+
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +22,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background: #F06414;
+    background: var(--cor02);
 }
 
 .container {
@@ -23,7 +36,7 @@ body {
 .form-image {
     width: 70%;
     height: 100vh;
-    background-color: #F06414;
+    background-color: var(--cor01);
     
 }
 .form-image video{
@@ -42,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--cor01);
     padding: 3rem;
 }
 
@@ -71,7 +84,7 @@ body {
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius: 10px;
-    background-color: hsla(22, 88%, 51%, 0.418);
+    background-color: var(--inputcolorbg);
     box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
 }
@@ -81,11 +94,11 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid #F06414;
+    outline: 1px solid var(--cor02);
 }
 
 .input-box input::placeholder {
-    color: #ffffff;
+    color: var(--cor01);
 }
 
 
@@ -100,21 +113,21 @@ body {
 .form-button button{
     padding: 10px;
     margin: 10px;
-    background-color: #F06414;
+    background-color: var(--cor02);
     border-radius: 10px;
-    color: white;
+    color: var(--cor01);
     border: none;
 }
 
 .form-button button:hover {
-    background-color: #333E48;
+    background-color: var(--btn-hover-color-bg);
 }
 
 .form-button button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--cor01);
 }
 
 @media screen and (max-width: 1330px) {

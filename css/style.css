@@ -122,8 +122,8 @@ body {
         display: none;
     }
     .mobile-bg video{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         display: block;
         position: absolute;
         object-fit: cover;
@@ -136,8 +136,8 @@ body {
     
     .container {
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
     }
     .form {
         background-color: #dbcecec5;
@@ -160,8 +160,15 @@ body {
 
 @media screen and (max-width: 1064px) {
     .container {
-        width: 90%;
+        width: 100vw;
         height: auto;
+    }
+    .form {
+        justify-content: center;
+        margin: auto;
+        left: -5px;
+        width: 80%;
+        
     }
     .input-group {
         flex-direction: column;

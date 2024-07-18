@@ -4,10 +4,11 @@
 
 :root{
 
-    --cor01: #ffffff;
-    --cor02: #f06414;
-    --inputcolorbg: hsla(22, 88%, 51%, 0.418);
+    --cor01: #131b1b;
+    --cor02: #550303;
+    --inputcolorbg: hsla(23, 10%, 74%, 0.897);
     --btn-hover-color-bg: #333E48;
+    --cor03: #ffffff;
 
 
 }
@@ -35,19 +36,26 @@ body {
     width: 40%;
     position: absolute;
     top: 94%;
-    left: 1%;
+    left: 15%;
+    display: flex;
+    justify-content: space-between;
     
     
 }
 .text-bg p{
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #303B3D;
+    
     
 }
 .text-bg span{
-    color: var(--cor02);
+    color: #303B3D;
     
+}
+.allrights p{
+    font-size: 10px;
 }
 .form-image {
     width: 70%;
@@ -110,7 +118,7 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid var(--cor02);
+    outline: 1px solid rgba(0, 0, 0, 0.479);
 }
 
 .input-box input::placeholder {
@@ -129,7 +137,7 @@ body {
 .form-button button{
     padding: 10px;
     margin: 10px;
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     border-radius: 10px;
     color: var(--cor01);
     border: none;
@@ -142,7 +150,7 @@ body {
 .form-button button a {
     text-decoration: none;
     font-size: 0.93rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--cor01);
 }
 

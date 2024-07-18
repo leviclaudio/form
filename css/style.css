@@ -4,11 +4,11 @@
 
 :root{
 
-    --cor01: #131b1b;
-    --cor02: #550303;
-    --inputcolorbg: hsla(23, 10%, 74%, 0.897);
-    --btn-hover-color-bg: #333E48;
-    --cor03: #ffffff;
+    --cor01: #ffffff;
+    --cor02: #f7eded;
+    --inputcolorbg: #ed1a25b9;
+    --btn-hover-color-bg: #293480;
+    --cor03: #ED1A23;
     --cor04: #000000;
 
 
@@ -34,12 +34,11 @@ body {
     display: flex; 
 }
 .text-bg{
-    width: 40%;
+    width: 30%;
     position: absolute;
     top: 94%;
-    left: 15%;
-    display: flex;
-    justify-content: space-between;
+    left: 1%;
+    
     
     
 }
@@ -47,16 +46,13 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: #303B3D;
+    color: #ffffff;
     
     
 }
 .text-bg span{
-    color: #303B3D;
+    color: #ED1A23;
     
-}
-.allrights p{
-    font-size: 10px;
 }
 .form-image {
     width: 70%;
@@ -64,13 +60,13 @@ body {
     background-color: var(--cor01);
     
 }
-.form-image video{
+.form-image img{
     width: 70%;
     height: 100vh;
     position: absolute;
     object-fit: cover;
 }
-.mobile-bg video{
+.mobile-bg img{
     display: none;
 }
 
@@ -87,7 +83,7 @@ body {
 .form-header img{
     margin: auto;
     display: block;
-    width: 80%;
+    width: 60%;
     margin-top: 20px;
 }
 .input-group {
@@ -119,7 +115,7 @@ body {
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid rgba(0, 0, 0, 0.479);
+    outline: 1px solid #ED1A23;
 }
 
 .input-box input::placeholder {
@@ -145,7 +141,7 @@ body {
 }
 
 .form-button button:hover {
-    background-color: var(--btn-hover-color-bg);
+   
 }
 
 .form-button button a {
@@ -156,10 +152,16 @@ body {
 }
 
 @media screen and (max-width: 1330px) {
+
+    :root{
+        --cor01mbl: #ED1A23;
+        --cor02mbl: #ffffff;
+    }
+
     .form-image {
         display: none;
     }
-    .mobile-bg video{
+    .mobile-bg img{
         width: 100vw;
         height: 100vh;
         display: block;
@@ -194,8 +196,16 @@ body {
    
     .title img{
         display: block;
-        width: 40%;
+        width: 30%;
         margin-top: -20px;
+    }
+    .form-button button{
+        background-color: var(--cor01mbl);
+        
+    }
+    .form-button button a{
+        color: var(--cor02mbl);
+
     }
 }
 
@@ -208,7 +218,7 @@ body {
         justify-content: center;
         margin: auto;
         left: -5px;
-        width: 80%;
+        width: 65%;
         
     }
     .input-group {
